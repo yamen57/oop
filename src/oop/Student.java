@@ -8,7 +8,7 @@ public class Student extends Person {
 	
 	
 	public Student() {
-		super();
+		System.out.println("In the derived class constructor");
 	}
 
 
@@ -47,6 +47,12 @@ public class Student extends Person {
 
 	public void setGPA(double gPA) {
 		GPA = gPA;
+	}
+	
+	public void printAllDetails() {
+		super.printAllDetails();
+		System.out.println("Study Level : "+ studyLevel +"\nGPA : "+ GPA +"\nSpecialization : "+specialization);
+		
 	}
 	
 	

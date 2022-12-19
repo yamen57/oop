@@ -9,6 +9,7 @@ public class Person {
 	
 	
 	public Person() {
+		System.out.println("In the base class constructor");
 		
 	}
 
@@ -61,6 +62,12 @@ public class Person {
 		return sign;
 	}
 	
+	
+	public void printAllDetails() {
+		System.out.println(name);
+		System.out.println("Name : "+ name +"\nAdress : "+ adress+"\nSign : "+sign+ "\nAge : "+age);
+		
+	}
 	
 	
 
