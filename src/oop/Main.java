@@ -14,7 +14,7 @@ public class Main {
 		System.out.println(st2.getSign());
 		System.out.println(st2.getName());
 		st2.printAllDetails();
-		
+		st2.printName();
 	}
 	
 	

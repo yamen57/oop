@@ -54,7 +54,10 @@ public class Student extends Person {
 		System.out.println("Study Level : "+ studyLevel +"\nGPA : "+ GPA +"\nSpecialization : "+specialization);
 		
 	}
-	
+	//error final method can't override
+	//public void printName() {
+		
+	//}
 	
 	
 }

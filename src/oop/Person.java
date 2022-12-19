@@ -1,11 +1,15 @@
 package oop;
 
 public class Person {
+	//protected private public 
+	//public can be accessed from anywhere
+	//private can be accessed from the same class defined in 
+	//protected can be accessed from the Base class and all the derived ones (sub classes)
 	
-	String name;
-	String adress;
-	String sign;
-	int age;
+	protected String name;
+	protected String adress;
+	protected String sign;
+	protected int age;
 	
 	
 	public Person() {
@@ -64,11 +68,15 @@ public class Person {
 	
 	
 	public void printAllDetails() {
-		System.out.println(name);
+		
 		System.out.println("Name : "+ name +"\nAdress : "+ adress+"\nSign : "+sign+ "\nAge : "+age);
 		
 	}
-	
-	
+	//---------------------------------------------------
+	// final methods 
+	//can't override
+	public final void printName (){
+		System.out.println(name);
+	}
 
 }
